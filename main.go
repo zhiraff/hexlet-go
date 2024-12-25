@@ -1,11 +1,13 @@
-package main
+package hxlt
 
 import (
-	// "./greeting"
-	"github.com/fatih/color"
+	"github.com/samber/lo"
 )
 
-func main() {
-	// fmt.Println(greeting.Hello())
-	color.Cyan("Prints text in cyan.")
+func isEven(x int, _ int) bool {
+	return x%2 == 0
+}
+
+func Even(vals []int) []int {
+	return lo.Filter[int](vals, isEven)
 }
