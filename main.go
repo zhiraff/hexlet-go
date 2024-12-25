@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
-
-	"./greeting"
+	// "./greeting"
+	"github.com/fatih/color"
 )
 
 func main() {
-	fmt.Println(greeting.Hello())
+	// fmt.Println(greeting.Hello())
+	color.Cyan("Prints text in cyan.")
 }
